@@ -1,0 +1,22 @@
+{
+  "name": "squid",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "update": "npx npm-check-updates --filter /subsquid/ --upgrade && npm i -f"
+  },
+  "dependencies": {
+    "@subsquid/evm-processor": "^1.18.0",
+    "@subsquid/evm-typegen": "^4.0.0",
+    "@subsquid/graphql-server": "^4.5.1",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.11.1",
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "@subsquid/evm-typegen": "^4.0.0",
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  }
+}
